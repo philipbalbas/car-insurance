@@ -1,3 +1,5 @@
+const tailwindConfig = require("./tailwind.config.js");
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -27,7 +29,17 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-typescript'
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-antd',
+    'gatsby-plugin-postcss',
+    {
+      resolve: 'gatsby-plugin-google-fonts',
+      options: {
+        fonts: [
+          'Montserrat:400,500,600'
+        ]
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
