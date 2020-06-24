@@ -1,14 +1,12 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
 
-// import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 import WelcomeModal from "../components/WelcomeModal"
 import { Layout, Tooltip } from "antd"
 
 const IndexPage = () => {
-  const [modalIsVisible, setModalIsVisible] = useState(false)
+  const [modalIsVisible, setModalIsVisible] = useState(true)
 
   const handleSubmit = () => {
     setModalIsVisible(false)
