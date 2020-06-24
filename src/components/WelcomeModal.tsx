@@ -19,7 +19,6 @@ import {
   faStopwatch,
   faUserSecret,
 } from "@fortawesome/pro-light-svg-icons"
-// import {} from "reac"
 
 const { Item } = Form
 const { Step } = Steps

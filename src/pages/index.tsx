@@ -1,9 +1,10 @@
 import React, { useState } from "react"
 import { Link } from "gatsby"
-
-import SEO from "../components/seo"
-import WelcomeModal from "../components/WelcomeModal"
 import { Layout, Tooltip } from "antd"
+import loadable from "@loadable/component"
+import SEO from "../components/seo"
+
+const WelcomeModal = loadable(() => import("../components/WelcomeModal"))
 
 const IndexPage = () => {
   const [modalIsVisible, setModalIsVisible] = useState(true)
