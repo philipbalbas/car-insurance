@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 import { Layout, Tooltip, Button } from "antd"
 import loadable from "@loadable/component"
 import SEO from "../components/seo"
-import { css } from "@emotion/core"
+// import { css } from "@emotion/core"
 
 const WelcomeModal = loadable(() => import("../components/WelcomeModal"))
 
@@ -111,7 +111,7 @@ const insurers = [
 ]
 
 const IndexPage = () => {
-  const [modalIsVisible, setModalIsVisible] = useState(false)
+  const [modalIsVisible, setModalIsVisible] = useState(true)
 
   const handleSubmit = () => {
     setModalIsVisible(false)
