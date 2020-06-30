@@ -17,6 +17,7 @@ import {
   faStopwatch,
   faUserSecret,
 } from "@fortawesome/pro-light-svg-icons"
+import { css } from "@emotion/core"
 
 const { Item } = Form
 const { Step } = Steps
@@ -343,7 +344,14 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:border-r md:pr-4">
-                <label>What year were you born?</label>
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                    margin-right: 10px;
+                  `}
+                >
+                  What year were you born?
+                </label>
                 <Item
                   name="birthYear"
                   rules={[
@@ -352,10 +360,14 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                       message: "Please enter a valid year",
                     },
                   ]}
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
                 >
                   <Input
                     type="number"
                     placeholder="Year"
+                    className="flex text-center mx-auto"
                     style={{ maxWidth: 120 }}
                   />
                 </Item>

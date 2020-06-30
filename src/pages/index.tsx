@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 import { Layout, Tooltip, Button, Form, Input } from "antd"
 import loadable from "@loadable/component"
 import SEO from "../components/seo"
-// import { css } from "@emotion/core"
 import { useQueryParams, StringParam, BooleanParam } from "use-query-params"
 
 const WelcomeModal = loadable(() => import("../components/WelcomeModal"))
