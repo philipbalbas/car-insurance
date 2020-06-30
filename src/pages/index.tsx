@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { Layout, Tooltip, Button } from "antd"
+import { Layout, Tooltip, Button, Form, Input } from "antd"
 import loadable from "@loadable/component"
 import SEO from "../components/seo"
 // import { css } from "@emotion/core"
+import { useQueryParams, StringParam, BooleanParam } from "use-query-params"
 
 const WelcomeModal = loadable(() => import("../components/WelcomeModal"))
 
@@ -110,31 +111,66 @@ const insurers = [
   },
 ]
 
+type data = {
+  zipCode: string
+  insurer: string
+  homeOwner: boolean
+  license: boolean
+  accidents: boolean
+  birthYear: string
+  dui: boolean
+  creditScore: string
+  sr22: string
+}
+
 const IndexPage = () => {
   const [modalIsVisible, setModalIsVisible] = useState(true)
+  const [query, setQuery] = useQueryParams({
+    "lincx-zipCode": StringParam,
+    "lincx-insurer": StringParam,
+    "lincx-homeOwner": BooleanParam,
+    "lincx-license": BooleanParam,
+    "lincx-accidents": BooleanParam,
+    "lincx-birthYear": StringParam,
+    "lincx-dui": BooleanParam,
+    "lincx-creditScore": StringParam,
+    "lincx-sr22": StringParam,
+  })
 
-  const handleSubmit = () => {
+  const handleSubmit = (values: data) => {
+    setQuery({
+      "lincx-zipCode": values.zipCode,
+      "lincx-insurer": values.insurer,
+      "lincx-homeOwner": values.homeOwner,
+      "lincx-license": values.license,
+      "lincx-accidents": values.accidents,
+      "lincx-birthYear": values.birthYear,
+      "lincx-dui": values.dui,
+      "lincx-creditScore": values.creditScore,
+      "lincx-sr22": values.sr22,
+    })
     setModalIsVisible(false)
   }
 
   useEffect(() => {
+    const offersDiv = document.getElementById("offers")
+    if (offersDiv) {
+      offersDiv.innerHTML = ""
+    }
     const script = document.createElement("script")
     script.async = true
     script.defer = true
     script.src = "https://api.lincx.com/ad"
     script.setAttribute("data-zone-id", "c2barv")
-    document.getElementById("offers")?.appendChild(script)
-  }, [])
+    offersDiv?.appendChild(script)
+  }, [query])
 
   return (
     <Layout className="h-full bg-gray-100">
       <SEO title="Compare Best Car Insurance" />
       <Layout.Header className="bg-white flex items-center justify-center md:justify-start">
         <Link to="/">
-          <img
-            src="https://umbrella.data.naturalint.com/staging/sites/uploads/photo/CI-NewLogo.20190924094322.svg"
-            className="h-8"
-          />
+          <div>Car Insurance</div>
         </Link>
       </Layout.Header>
       <Layout.Content>
@@ -279,6 +315,7 @@ const IndexPage = () => {
             </div>
           </div>
         </div>
+
         <WelcomeModal visible={modalIsVisible} handleSubmit={handleSubmit} />
       </Layout.Content>
       <Layout.Footer>
