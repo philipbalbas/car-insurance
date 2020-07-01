@@ -318,8 +318,23 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
               }}
             >
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:border-r md:pr-4">
-                <label>Do you own your own home?</label>
-                <Item name="homeOwner">
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
+                  Do you own your own home?
+                </label>
+                <Item
+                  name="homeOwner"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Radio.Group style={{ minWidth: 120 }}>
                     <Radio.Button value={true} className="w-3/6 text-center">
                       Yes
@@ -331,8 +346,23 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:pl-4">
-                <label>Do you have an active license?</label>
-                <Item name="license">
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
+                  Do you have an active license?
+                </label>
+                <Item
+                  name="license"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Radio.Group style={{ minWidth: 120 }}>
                     <Radio.Button value={true} className="w-3/6 text-center">
                       Yes
@@ -347,7 +377,6 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 <label
                   css={css`
                     flex: 0 0 50%;
-                    margin-right: 10px;
                   `}
                 >
                   What year were you born?
@@ -362,19 +391,38 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                   ]}
                   css={css`
                     flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
                   `}
                 >
                   <Input
                     type="number"
                     placeholder="Year"
-                    className="flex text-center mx-auto"
+                    className="flex text-center"
                     style={{ maxWidth: 120 }}
                   />
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:pl-4">
-                <label>Accidents or tickets in the past 3 years?</label>
-                <Item name="accidents">
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
+                  Accidents or tickets in the past 3 years?
+                </label>
+                <Item
+                  name="accidents"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Radio.Group style={{ minWidth: 120 }}>
                     <Radio.Button value={true} className="w-3/6 text-center">
                       Yes
@@ -386,8 +434,23 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:border-r md:pr-4">
-                <label>What's your credit score?</label>
-                <Item name="creditScore">
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
+                  What's your credit score?
+                </label>
+                <Item
+                  name="creditScore"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Select
                     style={{ maxWidth: "120px", minWidth: "120px" }}
                     dropdownMatchSelectWidth={180}
@@ -411,7 +474,11 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:pb-8 md:w-2/4 md:pl-4">
-                <label>
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
                   Have you ever had a DUI?{" "}
                   <Tooltip
                     title="DUI: conviction for driving under the influence"
@@ -420,7 +487,16 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                     <FontAwesomeIcon icon={faExclamationCircle} />
                   </Tooltip>
                 </label>
-                <Item name="dui">
+                <Item
+                  name="dui"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Radio.Group style={{ minWidth: 120 }}>
                     <Radio.Button value={true} className="w-3/6 text-center">
                       Yes
@@ -432,7 +508,11 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                 </Item>
               </div>
               <div className="flex justify-between items-start md:m-0 md:w-2/4 md:border-r md:pr-4">
-                <label>
+                <label
+                  css={css`
+                    flex: 0 0 50%;
+                  `}
+                >
                   Do you have an SR-22?{" "}
                   <Tooltip
                     title="SR-22: in most states, this is a legal requirement for drivers who have been convicted for a traffic-related offense"
@@ -441,7 +521,16 @@ const WelcomeModal = ({ visible, handleSubmit }: Props<data>) => {
                     <FontAwesomeIcon icon={faExclamationCircle} />
                   </Tooltip>
                 </label>
-                <Item name="sr22">
+                <Item
+                  name="sr22"
+                  css={css`
+                    flex: 0 0 50%;
+                    .ant-form-item-control-input-content {
+                      display: flex;
+                      justify-content: flex-end;
+                    }
+                  `}
+                >
                   <Radio.Group style={{ minWidth: 120 }}>
                     <Radio.Button value={true} className="w-3/6 text-center">
                       Yes
