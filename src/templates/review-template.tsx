@@ -2,8 +2,10 @@ import React from "react"
 import { graphql } from "gatsby"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 import Img from "gatsby-image"
+import loadable from "@loadable/component"
 import MainLayout from "../components/layout"
-import StickyBanner from "../components/StickyBanner"
+
+const StickyBanner = loadable(() => import("../components/StickyBanner"))
 
 const ReviewTemplate = ({ data }) => {
   const {

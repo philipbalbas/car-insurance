@@ -1,8 +1,9 @@
 import React from "react"
+import loadable from "@loadable/component"
 
 import MainLayout from "../components/layout"
-import ReviewsList from "../components/reviews"
-import StickyBanner from "../components/StickyBanner"
+const ReviewsList = loadable(() => import("../components/reviews"))
+const StickyBanner = loadable(() => import("../components/StickyBanner"))
 
 const Reviews = () => {
   return (
