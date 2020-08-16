@@ -3050,15 +3050,36 @@ type StringQueryOperatorInput = {
   readonly glob: Maybe<Scalars['String']>;
 };
 
+type ArticlesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type ArticlesQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<(
+      Pick<Mdx, 'id' | 'excerpt' | 'body'>
+      & { readonly frontmatter: Maybe<(
+        Pick<MdxFrontmatter, 'date' | 'author' | 'slug' | 'title'>
+        & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+      )> }
+    )> } };
+
 type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type Unnamed_1_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
 
-type StickyImgQueryVariables = Exact<{ [key: string]: never; }>;
+type GatsbyImageSharpFluid_withWebpFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
+
+type GetSingleReviewQueryVariables = Exact<{
+  slug: Maybe<Scalars['String']>;
+}>;
 
 
-type StickyImgQuery = { readonly desktop: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+type GetSingleReviewQuery = { readonly mdx: Maybe<(
+    Pick<Mdx, 'body'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'author'>
+      & { readonly logo: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
+    )> }
+  )> };
 
 type ReviewsQueryVariables = Exact<{ [key: string]: never; }>;
 
@@ -3071,12 +3092,15 @@ type ReviewsQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<(
       )> }
     )> } };
 
+type StickyImgQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type StickyImgQuery = { readonly desktop: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+
 type usersYvesProjectsinterlincxcarInsurancesrcpagesusingTypescriptTsx2907560070QueryVariables = Exact<{ [key: string]: never; }>;
 
 
 type usersYvesProjectsinterlincxcarInsurancesrcpagesusingTypescriptTsx2907560070Query = { readonly site: Maybe<Pick<Site, 'buildTime'>> };
-
-type GatsbyImageSharpFluid_withWebpFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
 type GetSingleArticleQueryVariables = Exact<{
   slug: Maybe<Scalars['String']>;
@@ -3090,17 +3114,6 @@ type GetSingleArticleQuery = { readonly mdx: Maybe<(
       & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
     )> }
   )> };
-
-type ArticlesQueryVariables = Exact<{ [key: string]: never; }>;
-
-
-type ArticlesQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<(
-      Pick<Mdx, 'id' | 'excerpt' | 'body'>
-      & { readonly frontmatter: Maybe<(
-        Pick<MdxFrontmatter, 'date' | 'author' | 'slug' | 'title'>
-        & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
-      )> }
-    )> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -3149,19 +3162,6 @@ type GatsbyImageSharpSizes_withWebp_tracedSVGFragment = Pick<ImageSharpSizes, 't
 type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
-
-type GetSingleReviewQueryVariables = Exact<{
-  slug: Maybe<Scalars['String']>;
-}>;
-
-
-type GetSingleReviewQuery = { readonly mdx: Maybe<(
-    Pick<Mdx, 'body'>
-    & { readonly frontmatter: Maybe<(
-      Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'author'>
-      & { readonly logo: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
-    )> }
-  )> };
 
 type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
 
