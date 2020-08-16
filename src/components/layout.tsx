@@ -8,7 +8,7 @@ interface Props {
 
 const MainLayout = ({ children }: Props) => {
   return (
-    <Layout className="h-full bg-white">
+    <Layout className="h-full bg-white font-sans">
       <Layout.Header className="bg-white flex items-center justify-between">
         <Link to="/">
           <div>Car Insurance</div>
@@ -17,7 +17,9 @@ const MainLayout = ({ children }: Props) => {
           <Menu.Item>
             <Link to="/reviews">Reviews</Link>
           </Menu.Item>
-          <Menu.Item>Articles</Menu.Item>
+          <Menu.Item>
+            <Link to="/articles">Articles</Link>
+          </Menu.Item>
         </Menu>
       </Layout.Header>
       <Layout.Content>{children}</Layout.Content>

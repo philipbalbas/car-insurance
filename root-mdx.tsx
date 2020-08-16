@@ -17,6 +17,9 @@ const components = {
   ul: props => (
     <ul className="text-base text-gray-900 list-disc pl-6">{props.children}</ul>
   ),
+  ol: props => (
+    <ol className="text-base list-decimal pl-6">{props.children}</ol>
+  ),
   li: props => <li className="mb-3"> {props.children} </li>,
   strong: props => <strong className="font-bold">{props.children}</strong>,
 }

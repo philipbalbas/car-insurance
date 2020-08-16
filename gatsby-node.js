@@ -5,7 +5,22 @@ exports.createPages = async ({ graphql, actions }) => {
 
   const result = await graphql(`
     {
-      allMdx {
+      articles: allMdx(filter: {
+        fileAbsolutePath: {
+          regex: "/content/articles/"
+        }
+      }) {
+        nodes {
+          frontmatter {
+            slug
+          }
+        }
+      }
+      reviews: allMdx(filter: {
+        fileAbsolutePath: {
+          regex: "/content/reviews/"
+        }
+      }) {
         nodes {
           frontmatter {
             slug
@@ -15,10 +30,20 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
-  result.data.allMdx.nodes.forEach(({ frontmatter: { slug } }) => {
+  result.data.reviews.nodes.forEach(({ frontmatter: { slug } }) => {
     createPage({
       path: `/reviews/${slug}`,
-      component: path.resolve('src/templates/review-template.tsx'),
+      component: path.resolve('src/templates/ReviewTemplate.tsx'),
+      context: {
+        slug
+      }
+    })
+  })
+
+  result.data.articles.nodes.forEach(({ frontmatter: { slug } }) => {
+    createPage({
+      path: `/articles/${slug}`,
+      component: path.resolve('src/templates/ArticleTemplate.tsx'),
       context: {
         slug
       }

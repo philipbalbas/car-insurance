@@ -1,6 +1,6 @@
 import React from "react"
 
-import styled from "@emotion/core"
+// import styled from "@emotion/core"
 import BackgroundImage from "gatsby-background-image"
 import { useStaticQuery, graphql } from "gatsby"
 

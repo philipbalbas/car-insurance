@@ -733,6 +733,42 @@ enum FileFieldsEnum {
   childMdx___frontmatter___logo___publicURL = 'childMdx.frontmatter.logo.publicURL',
   childMdx___frontmatter___logo___id = 'childMdx.frontmatter.logo.id',
   childMdx___frontmatter___logo___children = 'childMdx.frontmatter.logo.children',
+  childMdx___frontmatter___cover___sourceInstanceName = 'childMdx.frontmatter.cover.sourceInstanceName',
+  childMdx___frontmatter___cover___absolutePath = 'childMdx.frontmatter.cover.absolutePath',
+  childMdx___frontmatter___cover___relativePath = 'childMdx.frontmatter.cover.relativePath',
+  childMdx___frontmatter___cover___extension = 'childMdx.frontmatter.cover.extension',
+  childMdx___frontmatter___cover___size = 'childMdx.frontmatter.cover.size',
+  childMdx___frontmatter___cover___prettySize = 'childMdx.frontmatter.cover.prettySize',
+  childMdx___frontmatter___cover___modifiedTime = 'childMdx.frontmatter.cover.modifiedTime',
+  childMdx___frontmatter___cover___accessTime = 'childMdx.frontmatter.cover.accessTime',
+  childMdx___frontmatter___cover___changeTime = 'childMdx.frontmatter.cover.changeTime',
+  childMdx___frontmatter___cover___birthTime = 'childMdx.frontmatter.cover.birthTime',
+  childMdx___frontmatter___cover___root = 'childMdx.frontmatter.cover.root',
+  childMdx___frontmatter___cover___dir = 'childMdx.frontmatter.cover.dir',
+  childMdx___frontmatter___cover___base = 'childMdx.frontmatter.cover.base',
+  childMdx___frontmatter___cover___ext = 'childMdx.frontmatter.cover.ext',
+  childMdx___frontmatter___cover___name = 'childMdx.frontmatter.cover.name',
+  childMdx___frontmatter___cover___relativeDirectory = 'childMdx.frontmatter.cover.relativeDirectory',
+  childMdx___frontmatter___cover___dev = 'childMdx.frontmatter.cover.dev',
+  childMdx___frontmatter___cover___mode = 'childMdx.frontmatter.cover.mode',
+  childMdx___frontmatter___cover___nlink = 'childMdx.frontmatter.cover.nlink',
+  childMdx___frontmatter___cover___uid = 'childMdx.frontmatter.cover.uid',
+  childMdx___frontmatter___cover___gid = 'childMdx.frontmatter.cover.gid',
+  childMdx___frontmatter___cover___rdev = 'childMdx.frontmatter.cover.rdev',
+  childMdx___frontmatter___cover___ino = 'childMdx.frontmatter.cover.ino',
+  childMdx___frontmatter___cover___atimeMs = 'childMdx.frontmatter.cover.atimeMs',
+  childMdx___frontmatter___cover___mtimeMs = 'childMdx.frontmatter.cover.mtimeMs',
+  childMdx___frontmatter___cover___ctimeMs = 'childMdx.frontmatter.cover.ctimeMs',
+  childMdx___frontmatter___cover___atime = 'childMdx.frontmatter.cover.atime',
+  childMdx___frontmatter___cover___mtime = 'childMdx.frontmatter.cover.mtime',
+  childMdx___frontmatter___cover___ctime = 'childMdx.frontmatter.cover.ctime',
+  childMdx___frontmatter___cover___birthtime = 'childMdx.frontmatter.cover.birthtime',
+  childMdx___frontmatter___cover___birthtimeMs = 'childMdx.frontmatter.cover.birthtimeMs',
+  childMdx___frontmatter___cover___blksize = 'childMdx.frontmatter.cover.blksize',
+  childMdx___frontmatter___cover___blocks = 'childMdx.frontmatter.cover.blocks',
+  childMdx___frontmatter___cover___publicURL = 'childMdx.frontmatter.cover.publicURL',
+  childMdx___frontmatter___cover___id = 'childMdx.frontmatter.cover.id',
+  childMdx___frontmatter___cover___children = 'childMdx.frontmatter.cover.children',
   childMdx___slug = 'childMdx.slug',
   childMdx___body = 'childMdx.body',
   childMdx___excerpt = 'childMdx.excerpt',
@@ -1538,6 +1574,68 @@ enum MdxFieldsEnum {
   frontmatter___logo___childMdx___timeToRead = 'frontmatter.logo.childMdx.timeToRead',
   frontmatter___logo___childMdx___id = 'frontmatter.logo.childMdx.id',
   frontmatter___logo___childMdx___children = 'frontmatter.logo.childMdx.children',
+  frontmatter___cover___sourceInstanceName = 'frontmatter.cover.sourceInstanceName',
+  frontmatter___cover___absolutePath = 'frontmatter.cover.absolutePath',
+  frontmatter___cover___relativePath = 'frontmatter.cover.relativePath',
+  frontmatter___cover___extension = 'frontmatter.cover.extension',
+  frontmatter___cover___size = 'frontmatter.cover.size',
+  frontmatter___cover___prettySize = 'frontmatter.cover.prettySize',
+  frontmatter___cover___modifiedTime = 'frontmatter.cover.modifiedTime',
+  frontmatter___cover___accessTime = 'frontmatter.cover.accessTime',
+  frontmatter___cover___changeTime = 'frontmatter.cover.changeTime',
+  frontmatter___cover___birthTime = 'frontmatter.cover.birthTime',
+  frontmatter___cover___root = 'frontmatter.cover.root',
+  frontmatter___cover___dir = 'frontmatter.cover.dir',
+  frontmatter___cover___base = 'frontmatter.cover.base',
+  frontmatter___cover___ext = 'frontmatter.cover.ext',
+  frontmatter___cover___name = 'frontmatter.cover.name',
+  frontmatter___cover___relativeDirectory = 'frontmatter.cover.relativeDirectory',
+  frontmatter___cover___dev = 'frontmatter.cover.dev',
+  frontmatter___cover___mode = 'frontmatter.cover.mode',
+  frontmatter___cover___nlink = 'frontmatter.cover.nlink',
+  frontmatter___cover___uid = 'frontmatter.cover.uid',
+  frontmatter___cover___gid = 'frontmatter.cover.gid',
+  frontmatter___cover___rdev = 'frontmatter.cover.rdev',
+  frontmatter___cover___ino = 'frontmatter.cover.ino',
+  frontmatter___cover___atimeMs = 'frontmatter.cover.atimeMs',
+  frontmatter___cover___mtimeMs = 'frontmatter.cover.mtimeMs',
+  frontmatter___cover___ctimeMs = 'frontmatter.cover.ctimeMs',
+  frontmatter___cover___atime = 'frontmatter.cover.atime',
+  frontmatter___cover___mtime = 'frontmatter.cover.mtime',
+  frontmatter___cover___ctime = 'frontmatter.cover.ctime',
+  frontmatter___cover___birthtime = 'frontmatter.cover.birthtime',
+  frontmatter___cover___birthtimeMs = 'frontmatter.cover.birthtimeMs',
+  frontmatter___cover___blksize = 'frontmatter.cover.blksize',
+  frontmatter___cover___blocks = 'frontmatter.cover.blocks',
+  frontmatter___cover___publicURL = 'frontmatter.cover.publicURL',
+  frontmatter___cover___childImageSharp___id = 'frontmatter.cover.childImageSharp.id',
+  frontmatter___cover___childImageSharp___children = 'frontmatter.cover.childImageSharp.children',
+  frontmatter___cover___id = 'frontmatter.cover.id',
+  frontmatter___cover___parent___id = 'frontmatter.cover.parent.id',
+  frontmatter___cover___parent___children = 'frontmatter.cover.parent.children',
+  frontmatter___cover___children = 'frontmatter.cover.children',
+  frontmatter___cover___children___id = 'frontmatter.cover.children.id',
+  frontmatter___cover___children___children = 'frontmatter.cover.children.children',
+  frontmatter___cover___internal___content = 'frontmatter.cover.internal.content',
+  frontmatter___cover___internal___contentDigest = 'frontmatter.cover.internal.contentDigest',
+  frontmatter___cover___internal___description = 'frontmatter.cover.internal.description',
+  frontmatter___cover___internal___fieldOwners = 'frontmatter.cover.internal.fieldOwners',
+  frontmatter___cover___internal___ignoreType = 'frontmatter.cover.internal.ignoreType',
+  frontmatter___cover___internal___mediaType = 'frontmatter.cover.internal.mediaType',
+  frontmatter___cover___internal___owner = 'frontmatter.cover.internal.owner',
+  frontmatter___cover___internal___type = 'frontmatter.cover.internal.type',
+  frontmatter___cover___childMdx___rawBody = 'frontmatter.cover.childMdx.rawBody',
+  frontmatter___cover___childMdx___fileAbsolutePath = 'frontmatter.cover.childMdx.fileAbsolutePath',
+  frontmatter___cover___childMdx___slug = 'frontmatter.cover.childMdx.slug',
+  frontmatter___cover___childMdx___body = 'frontmatter.cover.childMdx.body',
+  frontmatter___cover___childMdx___excerpt = 'frontmatter.cover.childMdx.excerpt',
+  frontmatter___cover___childMdx___headings = 'frontmatter.cover.childMdx.headings',
+  frontmatter___cover___childMdx___html = 'frontmatter.cover.childMdx.html',
+  frontmatter___cover___childMdx___mdxAST = 'frontmatter.cover.childMdx.mdxAST',
+  frontmatter___cover___childMdx___tableOfContents = 'frontmatter.cover.childMdx.tableOfContents',
+  frontmatter___cover___childMdx___timeToRead = 'frontmatter.cover.childMdx.timeToRead',
+  frontmatter___cover___childMdx___id = 'frontmatter.cover.childMdx.id',
+  frontmatter___cover___childMdx___children = 'frontmatter.cover.childMdx.children',
   slug = 'slug',
   body = 'body',
   excerpt = 'excerpt',
@@ -1664,6 +1762,7 @@ type MdxFrontmatter = {
   readonly author: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
   readonly logo: Maybe<File>;
+  readonly cover: Maybe<File>;
 };
 
 
@@ -1680,6 +1779,7 @@ type MdxFrontmatterFilterInput = {
   readonly author: Maybe<StringQueryOperatorInput>;
   readonly date: Maybe<DateQueryOperatorInput>;
   readonly logo: Maybe<FileFilterInput>;
+  readonly cover: Maybe<FileFilterInput>;
 };
 
 type MdxGroupConnection = {
@@ -1922,6 +2022,8 @@ type Query_allSitePageArgs = {
 type Query_siteArgs = {
   buildTime: Maybe<DateQueryOperatorInput>;
   siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
+  port: Maybe<DateQueryOperatorInput>;
+  host: Maybe<StringQueryOperatorInput>;
   polyfill: Maybe<BooleanQueryOperatorInput>;
   pathPrefix: Maybe<StringQueryOperatorInput>;
   id: Maybe<StringQueryOperatorInput>;
@@ -2033,6 +2135,8 @@ type Query_allSitePluginArgs = {
 type Site = Node & {
   readonly buildTime: Maybe<Scalars['Date']>;
   readonly siteMetadata: Maybe<SiteSiteMetadata>;
+  readonly port: Maybe<Scalars['Date']>;
+  readonly host: Maybe<Scalars['String']>;
   readonly polyfill: Maybe<Scalars['Boolean']>;
   readonly pathPrefix: Maybe<Scalars['String']>;
   readonly id: Scalars['ID'];
@@ -2043,6 +2147,14 @@ type Site = Node & {
 
 
 type Site_buildTimeArgs = {
+  formatString: Maybe<Scalars['String']>;
+  fromNow: Maybe<Scalars['Boolean']>;
+  difference: Maybe<Scalars['String']>;
+  locale: Maybe<Scalars['String']>;
+};
+
+
+type Site_portArgs = {
   formatString: Maybe<Scalars['String']>;
   fromNow: Maybe<Scalars['Boolean']>;
   difference: Maybe<Scalars['String']>;
@@ -2236,6 +2348,8 @@ enum SiteFieldsEnum {
   siteMetadata___title = 'siteMetadata.title',
   siteMetadata___description = 'siteMetadata.description',
   siteMetadata___author = 'siteMetadata.author',
+  port = 'port',
+  host = 'host',
   polyfill = 'polyfill',
   pathPrefix = 'pathPrefix',
   id = 'id',
@@ -2329,6 +2443,8 @@ enum SiteFieldsEnum {
 type SiteFilterInput = {
   readonly buildTime: Maybe<DateQueryOperatorInput>;
   readonly siteMetadata: Maybe<SiteSiteMetadataFilterInput>;
+  readonly port: Maybe<DateQueryOperatorInput>;
+  readonly host: Maybe<StringQueryOperatorInput>;
   readonly polyfill: Maybe<BooleanQueryOperatorInput>;
   readonly pathPrefix: Maybe<StringQueryOperatorInput>;
   readonly id: Maybe<StringQueryOperatorInput>;
@@ -2934,6 +3050,16 @@ type StringQueryOperatorInput = {
   readonly glob: Maybe<Scalars['String']>;
 };
 
+type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type Unnamed_1_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
+
+type StickyImgQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type StickyImgQuery = { readonly desktop: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+
 type ReviewsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
@@ -2945,28 +3071,36 @@ type ReviewsQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<(
       )> }
     )> } };
 
-type Unnamed_1_QueryVariables = Exact<{ [key: string]: never; }>;
+type usersYvesProjectsinterlincxcarInsurancesrcpagesusingTypescriptTsx2907560070QueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type Unnamed_1_Query = { readonly site: Maybe<Pick<Site, 'buildTime'>> };
+type usersYvesProjectsinterlincxcarInsurancesrcpagesusingTypescriptTsx2907560070Query = { readonly site: Maybe<Pick<Site, 'buildTime'>> };
 
-type Unnamed_2_QueryVariables = Exact<{ [key: string]: never; }>;
+type GatsbyImageSharpFluid_withWebpFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
-
-type Unnamed_2_Query = { readonly site: Maybe<{ readonly siteMetadata: Maybe<Pick<SiteSiteMetadata, 'title' | 'description' | 'author'>> }> };
-
-type GetSingleReviewQueryVariables = Exact<{
+type GetSingleArticleQueryVariables = Exact<{
   slug: Maybe<Scalars['String']>;
 }>;
 
 
-type GetSingleReviewQuery = { readonly mdx: Maybe<(
+type GetSingleArticleQuery = { readonly mdx: Maybe<(
     Pick<Mdx, 'body'>
     & { readonly frontmatter: Maybe<(
       Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'author'>
-      & { readonly logo: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
+      & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
     )> }
   )> };
+
+type ArticlesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type ArticlesQuery = { readonly allMdx: { readonly nodes: ReadonlyArray<(
+      Pick<Mdx, 'id' | 'excerpt' | 'body'>
+      & { readonly frontmatter: Maybe<(
+        Pick<MdxFrontmatter, 'date' | 'author' | 'slug' | 'title'>
+        & { readonly cover: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluidFragment> }> }> }
+      )> }
+    )> } };
 
 type GatsbyImageSharpFixedFragment = Pick<ImageSharpFixed, 'base64' | 'width' | 'height' | 'src' | 'srcSet'>;
 
@@ -2985,8 +3119,6 @@ type GatsbyImageSharpFluidFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRat
 type GatsbyImageSharpFluidLimitPresentationSizeFragment = { maxHeight: ImageSharpFluid['presentationHeight'], maxWidth: ImageSharpFluid['presentationWidth'] };
 
 type GatsbyImageSharpFluid_tracedSVGFragment = Pick<ImageSharpFluid, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'sizes'>;
-
-type GatsbyImageSharpFluid_withWebpFragment = Pick<ImageSharpFluid, 'base64' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
 type GatsbyImageSharpFluid_withWebp_tracedSVGFragment = Pick<ImageSharpFluid, 'tracedSVG' | 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
@@ -3018,9 +3150,22 @@ type GatsbyImageSharpSizes_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio
 
 type GatsbyImageSharpSizes_withWebp_noBase64Fragment = Pick<ImageSharpSizes, 'aspectRatio' | 'src' | 'srcSet' | 'srcWebp' | 'srcSetWebp' | 'sizes'>;
 
-type StickyImgQueryVariables = Exact<{ [key: string]: never; }>;
+type GetSingleReviewQueryVariables = Exact<{
+  slug: Maybe<Scalars['String']>;
+}>;
 
 
-type StickyImgQuery = { readonly desktop: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> };
+type GetSingleReviewQuery = { readonly mdx: Maybe<(
+    Pick<Mdx, 'body'>
+    & { readonly frontmatter: Maybe<(
+      Pick<MdxFrontmatter, 'title' | 'date' | 'slug' | 'author'>
+      & { readonly logo: Maybe<{ readonly childImageSharp: Maybe<{ readonly fluid: Maybe<GatsbyImageSharpFluid_withWebpFragment> }> }> }
+    )> }
+  )> };
+
+type PagesQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type PagesQueryQuery = { readonly allSitePage: { readonly nodes: ReadonlyArray<Pick<SitePage, 'path'>> } };
 
 }

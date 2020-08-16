@@ -10,7 +10,7 @@ const ReviewsList = () => {
     allMdx: { nodes },
   } = useStaticQuery<GatsbyTypes.ReviewsQuery>(graphql`
     query Reviews {
-      allMdx {
+      allMdx(filter: { fileAbsolutePath: { regex: "/content/reviews/" } }) {
         nodes {
           id
           excerpt

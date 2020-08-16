@@ -16,12 +16,7 @@ const ReviewTemplate = ({ data }) => {
   } = data
   return (
     <MainLayout>
-      <div
-        className="px-5 m-auto"
-        style={{
-          maxWidth: 1024,
-        }}
-      >
+      <div className="px-5 m-auto max-w-screen-lg">
         <div className="flex md:h-40 flex-col md:flex-row md:my-6">
           <div className="py-8 md:py-0 flex justify-center md:items-center border-b md:border-none border-solid border-gray-400 w-full md:w-48 md:justify-start">
             <Img

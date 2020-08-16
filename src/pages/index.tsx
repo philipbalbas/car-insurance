@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
-import { Layout, Tooltip, Button, Form, Input } from "antd"
+import { Tooltip, Button } from "antd"
 import loadable from "@loadable/component"
 import SEO from "../components/seo"
 import { useQueryParams, StringParam, BooleanParam } from "use-query-params"

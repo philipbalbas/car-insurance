@@ -15,19 +15,11 @@ module.exports = {
         path: `${__dirname}/src/assets`,
       },
     },
-
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src/posts`,
-    //   },
-    // },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `reviews`,
-        path: `${__dirname}/src/reviews`
-      }
+        path: `${__dirname}/src/content`,
+      },
     },
     `gatsby-plugin-mdx`,
     `gatsby-transformer-sharp`,
